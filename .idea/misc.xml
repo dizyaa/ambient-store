@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/compose-model-1646955927854.xml" value="0.3095439189189189" />
+        <entry key="../../../../layout/compose-model-1646960439107.xml" value="0.25" />
+        <entry key="../../../../layout/compose-model-1646965109844.xml" value="0.2382190445238869" />
+        <entry key="../../../../layout/compose-model-1646988445799.xml" value="0.32685185185185184" />
+        <entry key="../../../../layout/compose-model-1646989661177.xml" value="0.32685185185185184" />
+        <entry key="../../../../layout/compose-model-1646989865370.xml" value="0.33" />
+        <entry key="../../../../layout/compose-model-1647019897833.xml" value="0.32685185185185184" />
+        <entry key="../../../../layout/compose-model-1647028534040.xml" value="0.32685185185185184" />
+        <entry key="../../../../layout/compose-model-1647028653833.xml" value="0.33" />
+        <entry key="app/src/main/res/drawable/ic_pause.xml" value="0.1765" />
+        <entry key="app/src/main/res/font/khula.xml" value="0.32685185185185184" />
+        <entry key="app/src/main/res/font/khula_font.xml" value="0.32685185185185184" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
