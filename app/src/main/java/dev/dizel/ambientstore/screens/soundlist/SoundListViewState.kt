@@ -1,6 +1,6 @@
-package dev.dizel.ambientstore.soundlist
+package dev.dizel.ambientstore.screens.soundlist
 
-import dev.dizel.ambientstore.Sound
+import dev.dizel.ambientstore.model.domain.entities.Sound
 
 data class SoundListViewState(
     val soundList: List<Sound>

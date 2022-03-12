@@ -1,4 +1,4 @@
-package dev.dizel.ambientstore.ui
+package dev.dizel.ambientstore.commonUi
 
 import androidx.compose.ui.graphics.Color
 

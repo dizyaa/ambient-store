@@ -1,4 +1,6 @@
-package dev.dizel.ambientstore
+package dev.dizel.ambientstore.model.domain.entities
+
+import dev.dizel.ambientstore.model.domain.entities.Sound
 
 val stubSound = listOf(
     Sound("Rain", "https://www.godubrovnik.com/wp-content/uploads/rainy-day.jpg"),

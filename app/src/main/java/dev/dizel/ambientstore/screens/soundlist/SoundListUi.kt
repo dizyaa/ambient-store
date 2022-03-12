@@ -1,4 +1,4 @@
-package dev.dizel.ambientstore.soundlist
+package dev.dizel.ambientstore.screens.soundlist
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -34,10 +34,10 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberImagePainter
 import dev.dizel.ambientstore.R
-import dev.dizel.ambientstore.Sound
+import dev.dizel.ambientstore.model.domain.entities.Sound
 import dev.dizel.ambientstore.khulaFonts
-import dev.dizel.ambientstore.stubSound
-import dev.dizel.ambientstore.ui.DarkTeal
+import dev.dizel.ambientstore.model.domain.entities.stubSound
+import dev.dizel.ambientstore.commonUi.DarkTeal
 
 @Composable
 fun SoundList(
