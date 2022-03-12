@@ -37,6 +37,7 @@ import dev.dizel.ambientstore.R
 import dev.dizel.ambientstore.model.domain.entities.Sound
 import dev.dizel.ambientstore.khulaFonts
 import dev.dizel.ambientstore.commonUi.DarkTeal
+import dev.dizel.ambientstore.commonUi.Teal
 
 @Composable
 fun SoundList(
@@ -51,6 +52,8 @@ fun SoundList(
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 16.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp),
     ) {
+        item { PlayerItem() }
+
         state.soundList.forEach {
             item { SoundItem(sound = it) }
         }
@@ -64,7 +67,7 @@ internal fun PlayerItem() {
         modifier = Modifier
             .fillMaxWidth()
             .shadow(20.dp),
-        backgroundColor = Color.DarkGray,
+        backgroundColor = Teal,
         shape = RoundedCornerShape(20.dp),
     ) {
         Row() {
@@ -130,10 +133,7 @@ internal fun SoundItem(
                 }
             ),
             contentDescription = sound.name,
-            contentScale = ContentScale.None,
-//            colorFilter = ColorFilter.tint(
-//                color = Color.Black.copy(alpha = 0f)
-//            )
+            contentScale = ContentScale.Crop,
         )
 
         Box(

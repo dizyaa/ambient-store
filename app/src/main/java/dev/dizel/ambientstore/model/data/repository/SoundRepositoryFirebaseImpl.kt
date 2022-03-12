@@ -15,12 +15,10 @@ class SoundRepositoryFirebaseImpl @Inject constructor(
             fireStore.collection("sounds")
                 .get()
                 .await()
-                .map {
+                .mapNotNull {
                     Sound(
-                        name = it.get("title", String::class.java)
-                            ?: throw IllegalArgumentException(),
-                        imageUrl = it.get("imageUrl", String::class.java)
-                            ?: throw IllegalArgumentException()
+                        name = it.get("title", String::class.java) ?: return@mapNotNull null,
+                        imageUrl = it.get("imageUrl", String::class.java) ?: return@mapNotNull null
                     )
                 }
         } catch (ex: Exception) {
