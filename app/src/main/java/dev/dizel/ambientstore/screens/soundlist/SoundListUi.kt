@@ -36,7 +36,6 @@ import coil.compose.rememberImagePainter
 import dev.dizel.ambientstore.R
 import dev.dizel.ambientstore.model.domain.entities.Sound
 import dev.dizel.ambientstore.khulaFonts
-import dev.dizel.ambientstore.model.domain.entities.stubSound
 import dev.dizel.ambientstore.commonUi.DarkTeal
 
 @Composable
@@ -128,7 +127,6 @@ internal fun SoundItem(
                 data = sound.imageUrl,
                 builder = {
                     crossfade(true)
-                    placeholder(R.drawable.sound_placeholder)
                 }
             ),
             contentDescription = sound.name,
@@ -158,11 +156,4 @@ internal fun SoundItem(
             )
         }
     }
-}
-
-@Preview
-@Composable
-internal fun SoundItemPreview() {
-    val sound = stubSound.first()
-    SoundItem(sound = sound)
 }
